@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Angela Rosalia Burton | Dubai Elite Magazine</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#050505;
+      color:#fff;
+      font-family:'Poppins', sans-serif;
+      overflow-x:hidden;
+    }
+
+    /* HERO */
+
+    .hero{
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+      url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1600&q=80');
+
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero-content{
+      max-width:900px;
+    }
+
+    .tag{
+      color:#d4af37;
+      letter-spacing:5px;
+      margin-bottom:20px;
+      text-transform:uppercase;
+      font-size:14px;
+    }
+
+    .hero h1{
+      font-family:'Cinzel', serif;
+      font-size:75px;
+      margin-bottom:20px;
+      text-transform:uppercase;
+    }
+
+    .hero p{
+      color:#ddd;
+      font-size:20px;
+      line-height:1.8;
+    }
+
+    /* CONTAINER */
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      padding:80px 0;
+    }
+
+    /* PROFILE CARD */
+
+    .profile-card{
+      background:#111;
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow:0 0 40px rgba(212,175,55,0.15);
+      border:1px solid rgba(212,175,55,0.2);
+    }
+
+    .top-section{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:40px;
+      padding:50px;
+    }
+
+    .profile-image{
+      flex:1;
+      min-width:280px;
+      text-align:center;
+    }
+
+    .profile-image img{
+      width:320px;
+      height:420px;
+      object-fit:cover;
+      border-radius:20px;
+      border:4px solid #d4af37;
+      box-shadow:0 0 25px rgba(212,175,55,0.25);
+    }
+
+    .profile-info{
+      flex:2;
+      min-width:300px;
+    }
+
+    .profile-info h2{
+      font-family:'Cinzel', serif;
+      font-size:45px;
+      color:#d4af37;
+      margin-bottom:25px;
+    }
+
+    .profile-info p{
+      margin-bottom:15px;
+      font-size:17px;
+      color:#ddd;
+      line-height:1.8;
+    }
+
+    .highlight{
+      color:#d4af37;
+      font-weight:600;
+    }
+
+    /* SECTION */
+
+    .section{
+      padding:50px;
+      border-top:1px solid rgba(212,175,55,0.15);
+    }
+
+    .section h3{
+      font-family:'Cinzel', serif;
+      color:#d4af37;
+      font-size:32px;
+      margin-bottom:25px;
+    }
+
+    .section p,
+    .section li{
+      color:#ddd;
+      font-size:17px;
+      line-height:2;
+    }
+
+    .section ul{
+      padding-left:20px;
+    }
+
+    /* SOCIAL */
+
+    .social-box{
+      background:#1a1a1a;
+      padding:30px;
+      border-radius:20px;
+      margin-top:30px;
+      border-left:5px solid #d4af37;
+    }
+
+    .instagram{
+      display:flex;
+      align-items:center;
+      gap:15px;
+      margin-top:15px;
+    }
+
+    .instagram img{
+      width:55px;
+      height:55px;
+      border-radius:50%;
+    }
+
+    .instagram a{
+      color:#fff;
+      text-decoration:none;
+      font-size:20px;
+      transition:0.3s;
+    }
+
+    .instagram a:hover{
+      color:#d4af37;
+    }
+
+    /* QUOTE */
+
+    .quote{
+      text-align:center;
+      padding:100px 20px;
+    }
+
+    .quote h2{
+      font-family:'Cinzel', serif;
+      color:#d4af37;
+      margin-bottom:30px;
+      font-size:40px;
+    }
+
+    .quote p{
+      max-width:900px;
+      margin:auto;
+      font-size:28px;
+      line-height:1.8;
+      color:#eee;
+      font-style:italic;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#000;
+      padding:35px;
+      text-align:center;
+      border-top:1px solid rgba(212,175,55,0.15);
+    }
+
+    footer p{
+      color:#888;
+      letter-spacing:2px;
+      font-size:13px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:45px;
+      }
+
+      .hero p{
+        font-size:16px;
+      }
+
+      .top-section{
+        padding:30px;
+      }
+
+      .profile-image img{
+        width:100%;
+        height:auto;
+      }
+
+      .profile-info h2{
+        font-size:34px;
+      }
+
+      .quote p{
+        font-size:22px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="tag">Dubai Elite Online Magazine</div>
+
+      <h1>Angela Rosalia Burton</h1>
+
+      <p>
+        Entrepreneur • Real Estate Investor • Former Yacht Business Executive • Art Enthusiast
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- PROFILE -->
+
+  <div class="container">
+
+    <div class="profile-card">
+
+      <div class="top-section">
+
+        <!-- PROFILE IMAGE -->
+
+        <div class="profile-image">
+
+          <!-- Replace image URL with her actual photo -->
+
+          <img src="hamzahairdresser-20260514-0001.jpg" alt="Angela Rosalia Burton">
+
+        </div>
+
+        <!-- PROFILE DETAILS -->
+
+        <div class="profile-info">
+
+          <h2>Angela Rosalia Burton</h2>
+
+          <p><span class="highlight">Born:</span> 18th December 1992</p>
+
+          <p><span class="highlight">Origin:</span> Valletta, Malta</p>
+
+          <p><span class="highlight">Current Residence:</span> London, United Kingdom</p>
+
+          <p><span class="highlight">Profession:</span> Entrepreneur & Real Estate Investor</p>
+
+          <p><span class="highlight">Relationship Status:</span> Currently Single</p>
+
+          <p>
+            Angela Rosalia Burton is recognized for her international business
+            lifestyle, luxury investment interests, and strong presence within
+            entrepreneurial circles across London, Dubai, and Romania.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- FAMILY -->
+
+      <div class="section">
+
+        <h3>Family Background</h3>
+
+        <p><span class="highlight">Father:</span> Edward Burton</p>
+        <p><span class="highlight">Mother:</span> Christina Burton</p>
+
+        <br>
+
+        <p class="highlight">Siblings:</p>
+
+        <ul>
+          <li>Francis Burton</li>
+          <li>Claire Merlin</li>
+          <li>Joshua Burton</li>
+        </ul>
+
+      </div>
+
+      <!-- BUSINESS -->
+
+      <div class="section">
+
+        <h3>Business Journey</h3>
+
+        <p>
+          In 2017, Angela entered the luxury yacht business in Dubai alongside
+          her brother, Francis Burton. The company operated successfully for
+          several years before officially closing in 2021.
+        </p>
+
+        <p>
+          Following the closure of the yacht venture, Angela expanded her
+          interests into agricultural investments and became a member of
+          <span class="highlight">AgritedVentureFund</span>, a poultry investment
+          farm located in Romania, where she remains active today.
+        </p>
+
+        <p>
+          Outside business, Angela is passionate about art and painting,
+          frequently attending luxury exhibitions and creative events across Europe.
+        </p>
+
+      </div>
+
+      <!-- MARRIAGE -->
+
+      <div class="section">
+
+        <h3>Marriage History</h3>
+
+        <p>
+          Angela was previously married to Robert Crandall for three years.
+          She is currently single with no official relationship status.
+        </p>
+
+      </div>
+
+      <!-- SOCIAL MEDIA -->
+
+      <div class="section">
+
+        <h3>Official Social Media</h3>
+
+        <div class="social-box">
+
+          <p>
+            Angela Rosalia Burton maintains only one official Instagram account.
+          </p>
+
+          <div class="instagram">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+
+            <a href="https://instagram.com/angela_r_burton19" target="_blank">
+              @angela_r_burton19
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- QUOTE -->
+
+  <section class="quote">
+
+    <h2>Luxury • Vision • Influence</h2>
+
+    <p>
+      “Success is not measured only by wealth, but by the legacy
+      created across industries, cultures, and generations.”
+    </p>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 DUBAI ELITE ONLINE MAGAZINE • ALL RIGHTS RESERVED
+    </p>
+
+  </footer>
+
+</body>
+</html>
